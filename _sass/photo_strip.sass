@@ -37,6 +37,7 @@
     min-height: 60vh
     max-height: 60vh
     overflow: scroll
+    overflow-y: hidden
   .photo-strip
     display: inline-flex
     flex-direction: column
@@ -47,6 +48,7 @@
       width: 80vw
       position: relative
       min-height: 200px
+      background-size: 0
       &.loading::before
         content: ""
         position: absolute
@@ -57,7 +59,6 @@
         animation: Gradient 2s linear infinite
       +medium-devices
         width: 40vw
-        min-height: 60vh
         height: 60vh
       img
         margin: auto

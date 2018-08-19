@@ -9,9 +9,8 @@
   <div class='photo-wrapper'>
     <div class='photo-strip'>
       {% for image in site.data.index.images-strip %}
-      <div class='image-wrapper loading'>
-        <!-- <img class='lazy' src='{{image}}'/> -->
-        <img class='lazy' data-src='./{{image}}'/>
+      <div class='image-wrapper loading lazy' data-src='./{{image}}'>
+        <img class='img' data-src='./{{image}}'/>
       </div>
       {% endfor %}
     </div>
