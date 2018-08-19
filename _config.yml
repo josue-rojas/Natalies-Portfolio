@@ -1,0 +1,9 @@
+name: Natlies' Portfolio
+markdown: kramdown
+sass:
+    style: compressed
+    sass_dir: _sass
+compress_html:
+  clippings: all
+  comments:  ["<!-- ", " -->"]
+  endings:   all

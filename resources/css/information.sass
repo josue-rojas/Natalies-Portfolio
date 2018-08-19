@@ -1,0 +1,22 @@
+---
+---
+
+@import 'defaults.sass'
+@import 'sizes.sass'
+@import 'mixins.sass'
+@import 'main.sass'
+
+.content-wrapper
+  display: flex
+  justify-content: center
+  align-items: center
+  min-width: 80vw
+  max-width: 80vw
+  min-height: 60vh
+  +medium-devices
+    min-width: 40vw
+    max-width: 40vw
+    min-height: 60vh
+    max-height: 60vh
+    overflow: hidden
+    position: relative

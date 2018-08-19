@@ -1,0 +1,28 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- META -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel='stylesheet' type="text/css" href='resources/css/{{page.css}}'/>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
+  <script src='resources/js/{{ page.js }}'></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Bellefair" rel="stylesheet">
+  <title>{{ page.title }}</title>
+</head>
+<body>
+  <div class='view-wrapper'>
+    <div class='empty-space-nav'></div>
+    <nav class='contact nav'>
+      <a href='/'><h1 class='name'>NATALIE ROJAS</h1></a>
+      <a href='/information' class='contact-link{% if page.permalink == "/information" %} active {% endif %}'>Information</a>
+    </nav>
+    <div class='content-wrapper'>
+      {{ content }}
+    </div>
+  </div>
+</body>
+</html>

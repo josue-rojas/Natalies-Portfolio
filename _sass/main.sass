@@ -1,0 +1,47 @@
+.view-wrapper
+  min-width: 100vw
+  min-height: 100vh
+  justify-content: center
+  align-items: center
+  display: flex
+  flex-direction: column
+  +medium-devices
+    flex-direction: row
+  .empty-space-nav
+    display: block
+    min-height: 75px
+    +medium-devices
+      display: none
+  .contact
+    padding: 10px 0 5px
+    text-align: center
+    position: fixed
+    top: 0
+    background-color: rgba(255,255,255,.7)
+    width: 100%
+    // just to make sure its on top
+    z-index: 100
+    +medium-devices
+      width: auto
+      position: relative
+      padding: 0
+      margin-right: 10px
+    .name
+      font-family: 'Bellefair', serif
+      font-weight: 400
+      color: black
+    .contact-link
+      transition: color 300ms
+      color: rgb(85, 85, 85)
+      &.active
+        color: red
+      &:not(.active):hover
+        color: #9a9a9a
+  .content-wrapper
+    +medium-devices
+      min-width: 40vw
+      max-width: 40vw
+      min-height: 60vh
+      max-height: 60vh
+      overflow: hidden
+      position: relative
