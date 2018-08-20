@@ -16,13 +16,17 @@ $(document).ready(()=>{
 
 
   // slideshow click
-  let initPos = $('.image-wrapper').offset().left;
+  // process:
+  // find the distance between the starting point (.photo-wrapper).left (since this never changes) - the position of the first image
+  // the distance is then used to find which image is in the view which is distance/width , which tells how many images away it is (assume images are all same length)
+  // then add 1 or -1 depend on whcih button clicked and times it by the image width to find the next scroll position
   $('.button-wrapper').click(function(e){
     const leftright = $(e.target).closest('.button-wrapper').hasClass('left') ? -1 : 1;
-    const $photoStrip = $('.photo-wrapper');
-    const currPos = Math.abs($('.image-wrapper').offset().left-initPos);
-    const scrollBy = $photoStrip.width() * Math.floor((currPos/$photoStrip.width())+leftright);
-    $photoStrip.animate({scrollLeft:(scrollBy)}, 500);
+    let initPos = $('.photo-wrapper').offset().left;
+    const $photoStrip = $('.image-wrapper');
+    const currPos = Math.abs(initPos - $('.image-wrapper').offset().left);
+    const scrollBy = ($photoStrip.width() * Math.round((currPos/$photoStrip.width())+leftright));
+    $('.photo-wrapper').animate({scrollLeft:(scrollBy)}, 500);
   });
 
 });
