@@ -1,4 +1,7 @@
 ---
+  metatada:
+    description: "Portfolio for Natalie Rojas (Photo Editor)"
+    title: "Natalie's Portofolio"
   images-strip:
     - "./resources/images/photos/photo_0.jpg"
     - "./resources/images/photos/photo_1.jpeg"
