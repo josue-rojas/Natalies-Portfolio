@@ -8,7 +8,7 @@ layout: compress
   <!-- js -->
   {% include js.html %}
   <!-- css -->
-  <link rel='stylesheet' type="text/css" href='./resources/css/{{page.css}}'/>
+  <link rel='stylesheet' type="text/css" href='/resources/css/{{page.css}}'/>
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Bellefair" rel="stylesheet">
   <title>{{ page.title }}</title>
 </head>
@@ -16,8 +16,8 @@ layout: compress
   <div class='view-wrapper'>
     <div class='empty-space-nav'></div>
     <nav class='contact nav'>
-      <a href='./'><h1 class='name'>NATALIE ROJAS</h1></a>
-      <a href='./information' class='contact-link{% if page.permalink == "/information" %} active {% endif %}'>Information</a>
+      <a href='/'><h1 class='name'>NATALIE ROJAS</h1></a>
+      <a href='/information' class='contact-link{% if page.permalink == "/information" %} active {% endif %}'>Information</a>
     </nav>
     <div class='content-wrapper'>
       {{ content }}
