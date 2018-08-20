@@ -6,6 +6,9 @@ $(document).ready(()=>{
       el.removeClass('lazy');
       const $img = el.find('img');
       $img.attr('src', $img.data('src'));
+    },
+    onError: function(el){
+      el.remove();
     }
   });
 
