@@ -7,6 +7,15 @@ layout: compress
   {% include metadata.html %}
   <!-- js -->
   {% include js.html %}
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-53780759-6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-53780759-6');
+  </script>
   <!-- css -->
   <link rel='stylesheet' type="text/css" href='/resources/css/{{page.css}}'/>
   <link href="https://fonts.googleapis.com/css?family=Bellefair&text=NATLIE%20ROJS" rel="stylesheet">

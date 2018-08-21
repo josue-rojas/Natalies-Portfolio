@@ -2,7 +2,5 @@
 A portfolio made by me for Natalie using Jekyll, sass, and javascript.
 
 ### TODO:
-- add analytics
 - add seo metatada
 - add favicon
-- reduce img size (for web optimize/mobile/desktop)
