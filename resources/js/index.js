@@ -32,4 +32,18 @@ $(document).ready(()=>{
     $('.photo-wrapper').animate({scrollLeft:(scrollBy)}, 500);
   });
 
+  // image onclick enlarge
+  let isFullImage = false;
+  $('.photo-wrapper .photo-strip img').click((e) => {
+    // const $image = $(e.target).closest('img').data('src');
+    const image_source = $(e.target).closest('img').data('src');
+    // const image_source = $image.data('src');
+    $('.full-image .full-image-wrapper img').attr('src', image_source);
+    $('.full-image').fadeIn(400);
+  });
+  $('.full-image').click((e) => {
+    isFullImage = false;
+    $('.full-image').fadeOut(400);
+  });
+
 });
