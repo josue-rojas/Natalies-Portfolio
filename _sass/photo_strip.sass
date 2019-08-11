@@ -1,4 +1,4 @@
-// @import 'mixins.sass'
+@import 'mixins.sass'
 
 .button-wrapper
   display: none
@@ -38,10 +38,14 @@
         -webkit-mask: url('/resources/images/svg/chevron-right.svg') 50% 50% no-repeat
 .photo-wrapper
   +medium-devices
-    min-width: 40vw
-    max-width: 40vw
-    min-height: 60vh
-    max-height: 60vh
+    // min-width: 40vw
+    // max-width: 40vw
+    // min-height: 60vh
+    // max-height: 60vh
+    min-width: 50vw
+    max-width: 50vw
+    min-height: 75vh
+    max-height: 75vh
     overflow: scroll
     overflow-y: hidden
   .photo-strip
@@ -64,8 +68,8 @@
         background-size: cover
         background-repeat: no-repeat
       +medium-devices
-        width: 40vw
-        height: 60vh
+        width: 50vw
+        height: 75vh
       img
         margin: auto
         align-self: center
@@ -107,6 +111,15 @@
       +medium-devices
         max-width: 95%
         max-height: 95%
+
+// #photo_strip
+//   +medium-devices
+//     min-width: 60vw
+//     max-width: 70vw
+//     min-height: 70vh
+//     max-height: 70vh
+//     overflow: hidden
+//     position: relative
 
 +keyframes(FadeIn)
   0%
