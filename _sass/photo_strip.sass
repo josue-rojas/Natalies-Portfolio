@@ -42,12 +42,13 @@
     // max-width: 40vw
     // min-height: 60vh
     // max-height: 60vh
-    min-width: 50vw
+    max-height: 75vh
     max-width: 50vw
     min-height: 75vh
-    max-height: 75vh
-    overflow: scroll
+    min-width: 50vw
     overflow-y: hidden
+    overflow: scroll
+    scroll-snap-type: x mandatory
   .photo-strip
     display: inline-flex
     flex-direction: column
@@ -79,6 +80,7 @@
         cursor: pointer
       &:not(.loading)
         img
+          scroll-snap-align: center
           animation: FadeIn 2s
           -webkit-animation-fill-mode: forwards
           -moz-animation-fill-mode: forwards
